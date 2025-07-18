@@ -1,0 +1,24 @@
+{
+  "name": "call-center-analysis",
+  "version": "1.0.0",
+  "description": "Simulação de pipeline de análise de chamadas com Transcribe, Comprehend e RDS (mocked)",
+  "main": "src/lambda-handler.js",
+  "scripts": {
+    "start": "node src/lambda-handler.js"
+  },
+  "keywords": [
+    "nodejs",
+    "aws",
+    "lambda",
+    "transcribe",
+    "comprehend",
+    "postgresql",
+    "mock",
+    "case-tecnico"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}

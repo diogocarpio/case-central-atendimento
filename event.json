@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "case-tecnico-callcenter"
+        },
+        "object": {
+          "key": "audios/ligacao_exemplo.mp3"
+        }
+      }
+    }
+  ]
+}
