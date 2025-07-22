@@ -1,5 +1,5 @@
 exports.saveAnalysisToDatabase = async ({ text, sentiment, keyPhrases, topics, timestamp, file }) => {
-  console.log(`[Mock] Salvando os dados no banco (simulado)`);
+  console.log(`Salvando os dados no banco (simulado)`);
 
   // Simula estrutura da query (sem executar)
   const simulatedQuery = `
@@ -22,5 +22,5 @@ exports.saveAnalysisToDatabase = async ({ text, sentiment, keyPhrases, topics, t
 
   console.log(simulatedQuery);
   await new Promise(resolve => setTimeout(resolve, 1000));
-  console.log("[Mock] Dados 'salvos' com sucesso no banco!");
+  console.log("Dados 'salvos' com sucesso no banco!");
 };

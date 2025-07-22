@@ -1,5 +1,5 @@
 exports.simulateComprehendAnalysis = async (text) => {
-  console.log(`[Mock] Analisando texto com IA...`);
+  console.log(`Analisando texto com IA...`);
 
   // Simulando delay de processamento
   await new Promise(resolve => setTimeout(resolve, 1000));

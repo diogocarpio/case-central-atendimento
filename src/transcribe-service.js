@@ -1,5 +1,5 @@
 exports.simulateTranscription = async (bucket, key) => {
-  console.log(`🎙️ [Mock] Transcrevendo o áudio do bucket "${bucket}", arquivo "${key}"...`);
+  console.log(`Transcrevendo o áudio do bucket "${bucket}", arquivo "${key}"...`);
 
   // Simulação de resposta de transcrição
   const simulatedTranscript = `
