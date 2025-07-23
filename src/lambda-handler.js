@@ -35,3 +35,24 @@ exports.handler = async (event) => {
     return { statusCode: 500, body: 'Erro interno na simulação' };
   }
 };
+
+// Simulação de execução local
+if (require.main === module) {
+  const fs = require('fs');
+  const path = require('path');
+
+  try {
+    const eventPath = path.resolve(__dirname, '../event.json'); // <- sobe um nível até a raiz do projeto
+    const eventData = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
+
+    exports.handler(eventData)
+      .then(response => {
+        console.log("Execução local concluída:", response);
+      })
+      .catch(error => {
+        console.error("Erro na execução local:", error);
+      });
+  } catch (err) {
+    console.error("Falha ao carregar event.json:", err);
+  }
+}
