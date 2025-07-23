@@ -4,7 +4,7 @@
   "description": "Simulação de pipeline de análise de chamadas com Transcribe, Comprehend e RDS (mocked)",
   "main": "src/lambda-handler.js",
   "scripts": {
-    "start": "node src/lambda-handler.js"
+    "start": "node src/lambda-handler.js < event.json"
   },
   "keywords": [
     "nodejs",
